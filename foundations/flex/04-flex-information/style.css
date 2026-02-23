@@ -24,3 +24,8 @@ img {
   justify-content: center;
   background: #eee;
 }
+
+.plant {
+  display: flex;
+  flex-direction: column;
+}
