@@ -7,6 +7,14 @@ body {
   font-family: Roboto, sans-serif;
 }
 
+body, .header, .left-links, .right-links, .content, .footer {
+  display: flex;
+}
+
+body, .content {
+  flex-direction: column;
+}
+
 img {
   width: 600px;
 }
