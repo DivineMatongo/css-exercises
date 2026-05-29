@@ -1,3 +1,7 @@
+:root {
+  --section-height: 75px;
+}
+
 body,
 html {
   height: 100%;
@@ -10,8 +14,8 @@ html {
   padding: 16px;
   box-sizing: border-box;
   display: grid;
-  grid-template-rows: repeat(2, 50px) 1fr 50px;
-  grid-template-columns: minmax(150px, 20%) 1fr;
+  grid-template-rows: repeat(2, var(--section-height)) 1fr var(--section-height);
+  grid-template-columns: minmax(150px, 25%) 1fr;
 }
 
 .container div {
@@ -25,10 +29,12 @@ html {
 
 .header {
   background-color: #006157;
+  grid-column: 1 / -1;
 }
 
 .sidebar {
   background-color: #005B94;
+  grid-row: 2 / -2;
 }
 
 .nav {
@@ -41,6 +47,7 @@ html {
 
 .footer {
   background-color: #393f4d;
+  grid-column: 1 / -1;
 }
 
 .article p {
