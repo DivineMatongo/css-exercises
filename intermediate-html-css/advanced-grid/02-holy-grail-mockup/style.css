@@ -23,6 +23,8 @@ ul {
 
 .header {
   background-color: #393f4d;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
 }
 
 .menu ul,
