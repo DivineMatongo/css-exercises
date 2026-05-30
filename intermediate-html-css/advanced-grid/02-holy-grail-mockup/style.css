@@ -15,6 +15,10 @@ div:not(.container) {
   align-items: center;
 }
 
+.header, .nav {
+    padding: 0px !important;
+}
+
 .container {
   text-align: center;
   height: 100vh;
@@ -37,6 +41,10 @@ div:not(.container) {
   grid-column: 1 / -1;
   display: grid;
   grid-template-columns: 1fr 2fr;
+}
+
+.logo {
+  text-align: left;
 }
 
 .menu ul,
