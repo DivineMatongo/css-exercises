@@ -17,6 +17,7 @@ div:not(.container) {
 
 .container {
   text-align: center;
+  height: 100vh;
   display: grid;
   grid-template-rows: max-content 40px 1fr 40px;
   grid-template-columns: 250px 1fr;
@@ -48,7 +49,7 @@ div:not(.container) {
   grid-row: 2 / -2;
   display: grid;
   grid-template-rows: max(100px) repeat(3, 1fr);
-  gap: 50px;
+  gap: 25px;
 }
 
 .sidebar .photo {
@@ -82,8 +83,9 @@ div:not(.container) {
 .article {
   background-color: #bccbde;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
   gap: 15px;
+  overflow-y: auto;
 }
 
 .article p {
