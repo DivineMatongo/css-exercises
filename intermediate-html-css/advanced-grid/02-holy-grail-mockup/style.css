@@ -3,6 +3,7 @@
   padding: 0;
 }
 
+/* Unordered lists are used for the nav bar and links in the header */
 ul {
   list-style: none;
   display: grid;
@@ -11,11 +12,13 @@ ul {
   gap: 1em;
 }
 
+/* Centralize all text in divs (except for the parent div) */
 div:not(.container) {
   display: grid;
   align-items: center;
 }
 
+/* Override the universal padding applied */
 .header, .nav {
     padding: 0px !important;
 }
@@ -81,7 +84,7 @@ div:not(.container) {
 
 .nav {
   background-color: #C50208;
-  grid-column: 2 / -1;
+  grid-column: 2;
 }
 
 .nav ul li {
